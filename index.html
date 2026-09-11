@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>استوديو تحويل وتنسيق المستندات | Document Conversion Studio</title>
+    
+    <!-- كود جوجل أرسنس الرئيسي (Google AdSense) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7306061033836189" crossorigin="anonymous"></script>
+
     <!-- خطوط جوجل الكلاسيكية -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- مكتبة jsPDF لتصدير ملفات PDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
     <style>
         :root {
             --bg-color: #2b2621;
@@ -84,17 +90,18 @@
             font-family: 'Amiri', serif;
             text-align: center;
             padding: 10px;
+            overflow: hidden;
         }
 
         .ad-top, .ad-bottom {
             width: 100%;
-            height: 90px;
+            min-height: 90px;
         }
 
         /* الإعلانات الجانبية العمودية */
         .ad-side {
             width: 160px;
-            height: 600px;
+            min-height: 600px;
             position: sticky;
             top: 20px;
         }
@@ -253,7 +260,7 @@
             cursor: pointer;
         }
 
-        /* التجاوب مع الشاشات الصغيرة (إخفاء الإعلانات الجانبية لتسهيل القراءة) */
+        /* التجاوب مع الشاشات الصغيرة */
         @media (max-width: 1024px) {
             .page-layout {
                 grid-template-columns: 1fr;
@@ -266,17 +273,19 @@
 </head>
 <body>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7306061033836189"
-     crossorigin="anonymous"></script>
+    <div class="page-layout">
+        <!-- إعلان جانبي أيمـن -->
+        <aside class="ad-banner ad-side">
+            <!-- يمكنك وضع كود الوحدة الإعلانية هنا -->
+            <span>مساحة إعلانية يمين<br>(160x600)</span>
         </aside>
 
-        
+        <!-- المحتوى الرئيسي -->
         <div class="container">
-           ><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7306061033836189"
-     crossorigin="anonymous"></script>
+            <!-- إعلان علوي -->
             <div class="ad-banner ad-top">
-                <span><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7306061033836189"
-     crossorigin="anonymous"></script></span>
+                <!-- يمكنك وضع كود الوحدة الإعلانية هنا -->
+                <span>مساحة إعلانية علوية (728x90)</span>
             </div>
 
             <header>
@@ -331,13 +340,15 @@
 
             <!-- إعلان سفلي -->
             <div class="ad-banner ad-bottom">
-                <span>مساحة إعلانية سفلية (Google AdSense 728x90)</span>
+                <!-- يمكنك وضع كود الوحدة الإعلانية هنا -->
+                <span>مساحة إعلانية سفلية (728x90)</span>
             </div>
         </div>
 
         <!-- إعلان جانبي أيسـر -->
         <aside class="ad-banner ad-side">
-            <span>مساحة إعلانية يسار<br>(AdSense 160x600)</span>
+            <!-- يمكنك وضع كود الوحدة الإعلانية هنا -->
+            <span>مساحة إعلانية يسار<br>(160x600)</span>
         </aside>
     </div>
 
